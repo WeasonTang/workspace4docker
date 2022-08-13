@@ -1,1 +1,1 @@
-FROM frankfang128/oh-my-docker:latest
+FROM weasontang/mydocker:0.1
