@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.245.0/containers/docker-existing-dockerfile
 {
-	"name": "Existing Dockerfile",
+	"name": "WeasonDocker",
 
 	// Sets the run context to one level up instead of the .devcontainer folder.
 	"context": "..",
@@ -16,11 +16,17 @@
 	// "postCreateCommand": "apt-get update && apt-get install -y curl",
 
 	// Uncomment when using a ptrace-based debugger like C++, Go, and Rust
-	// "runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
+	"runArgs": [ 
+		//"--network=network1",
+		//"--memory=10240m",
+		//"--memory-swap=10240m"
+		"--dns=114.114.114.114",
+		"--privileged"
+	],
 
 	// Uncomment to use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker.
-	"mounts": [ "source=mydocker_data,target=${containerWorkspaceFolder}/high_speed_files,type=volume" ]
+	"mounts": [ "source=mydocker_data,target=${containerWorkspaceFolder}/high_speed_files,type=volume" ],
 
 	// Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
-	// "remoteUser": "vscode"
+	"remoteUser": "root"
 }
