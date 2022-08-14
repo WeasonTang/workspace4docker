@@ -25,7 +25,7 @@
 	],
 
 	// Uncomment to use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker.
-	"mounts": [ "source=mydocker_data,target=${containerWorkspaceFolder}/high_speed_files,type=volume" ],
+	// "mounts": [ "source=mydocker_data,target=${containerWorkspaceFolder}/high_speed_files,type=volume" ],
 
 	// Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "root"
