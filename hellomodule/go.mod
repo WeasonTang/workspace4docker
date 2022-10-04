@@ -1,10 +1,10 @@
-module github.com/WeasonTang/workspace4docker
+module github.com/WeasonTang/workspace4docker/hellomodule
 
 go 1.18
 
 require (
-	github.com/valyala/fasthttp v1.38.0
-	go.uber.org/zap v1.22.0
+	github.com/valyala/fasthttp v1.40.0
+	go.uber.org/zap v1.23.0
 )
 
 require (
